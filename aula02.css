@@ -1,0 +1,54 @@
+.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vermelho {
+    color: #f55;
+}
+
+.blue {
+    color: blue;
+}
+
+.btn {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    background: #f55;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+ul {
+    display: block;
+    list-style: none;
+}
+
+ul li {
+    font: 12px arial, sans-serif;
+    color: #555;
+}
+
+ul li a {
+    font: 12px arial, sans-serif;
+    color: #555;
+}
+
+.texto-padrao {
+    font: 14px/1.5em "", Arial, sans-serif;
+    color: #555;
+}
+
+.content {
+    width: 980px;
+}
+
+.content p {
+    font: 15px/1.5em "Roboto", Arial, sans-serif;
+    color: #555;
+}
+/*# sourceMappingURL=aula02.css.map */

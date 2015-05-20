@@ -1,0 +1,20 @@
+#bgobrigado {
+    height: 60px;
+    width: 735px;
+    position: relative;
+    float: right;
+    background-image: url(../img/bg-obrigado.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#bgficha {
+    height: 60px;
+    width: 400px;
+    position: relative;
+    float: right;
+    background-image: url(../img/bg-ficha.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-bottom: 10px;
+}

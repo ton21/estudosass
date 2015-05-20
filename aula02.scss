@@ -1,0 +1,76 @@
+$colorRed: #f55;
+$colorBlue: blue;
+$corTextoPadrao: #555;
+$textoPadrao: arial, sans-serif;
+
+@mixin border-radius( $radius ) {
+	
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+
+}
+
+@mixin myButton( $background, $color, $paddingV, $paddingH ) {
+	
+	display: inline-block;
+	background: $background;
+	color: $color;
+	padding: $paddingV $paddingH;
+
+}
+
+@mixin myText ( $fontSize, $textColor, $customFont ) {
+	font: $fontSize+px/1.5em $customFont, Arial, sans-serif;
+	color: $textColor;
+}
+
+%center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vermelho {
+	color: $colorRed;
+}
+
+.blue {
+	color: $colorBlue;
+}
+
+.btn {
+	@include border-radius( 10px );
+	@include myButton( #f55, #fff, 10px, 15px );
+}
+	
+ul {
+	display: block;
+	list-style: none;
+
+	li {
+		font: 12px $textoPadrao;
+		color: $corTextoPadrao;
+
+			a { 
+				font: 12px $textoPadrao;
+				color: $corTextoPadrao;
+			}
+
+	}		
+
+}
+
+.texto-padrao {
+	@include myText( 14, #555, '' );
+}
+
+.content {
+	width: 980px;
+	@extend %center;
+}
+
+.content p {
+	@include myText( 15, #555, 'Roboto' );
+}
